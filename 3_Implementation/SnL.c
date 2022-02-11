@@ -50,7 +50,7 @@ int main()
             P1=P1+dice;
             if(P1<101)
             {
-                for(i=0;i<7;i++)
+                for(i=0;i<10;i++)
                 {
                     if(P1==Snake[i].start)
                     {
@@ -63,14 +63,22 @@ int main()
                             P1= Ladder[i].end;
                         }
                 }
+                if (P1==100)
+                {
+                    printf("Dice=%d\n Player 1 Position is %d\n",dice,P1);
+                    printf("BRAVO! PLAYER 1 WON...\n");
+                    return(0);
+                }
+                
             }
-            else
+            if(P1>100)
             {
-                P1=100;
-                printf("BRAVO! PLAYER 1 WON...\n");
-                printf("Dice=%d\n Player 1 Position is %d",dice,P1);
-                return(0);
+                printf("OOPS! POSITION CAN NOT BE OBTAINED, PLEASE ROLL THE DICE AGAIN\n");
+                P1=P1-dice;
+                printf("Player 1 Position is%d",P1);
+                break;
             }
+
              printf("Dice=%d\n Player 1 Position is %d",dice,P1);
             break;
         case (2):
@@ -96,14 +104,22 @@ int main()
                             P2= Ladder[i].end;
                         }
                 }
+            
+            if (P2==100)
+                {
+                    printf("Dice=%d\n Player 2 Position is %d\n",dice,P1);
+                    printf("BRAVO! PLAYER 2 WON...\n");
+                    return(0);
+                }
             }
-            else
+            if(P2>100)
             {
-                P2=100;
-                printf("BRAVO! PLAYER 2 WON...\n");
-                printf("Dice=%d\n Player 2 Position is %d",dice,P2);
-                return(0);
+                printf("OOPS! POSITION CAN NOT BE OBTAINED, PLEASE ROLL THE DICE AGAIN");
+                P2=P2-dice;
+                printf("Player 2 Position is%d",P2);
+                break;
             }
+            
              printf("Dice=%d\n Player 2 Position is %d",dice,P2);
             break;
         case (3):
@@ -129,15 +145,22 @@ int main()
                             P3= Ladder[i].end;
                         }
                 }
+            if (P3==100)
+                {
+                    printf("Dice=%d\n Player 3 Position is %d\n",dice,P1);
+                    printf("BRAVO! PLAYER 3 WON...\n");
+                    return(0);
+                }
             }
-            else
+            if(P3>100)
             {
-                P3=100;
-                printf("BRAVO! PLAYER 3 WON...\n");
-                printf("Dice=%d\n Player 1 Position is %d",dice,P3);
-                return(0);
+                printf("OOPS! POSITION CAN NOT BE OBTAINED, PLEASE ROLL THE DICE AGAIN");
+                P3=P3-dice;
+                printf("Player 3 Position is%d",P3);
+                break;
             }
-             printf("Dice=%d\n Player 1 Position is %d",dice,P3);
+            
+             printf("Dice=%d\n Player 3 Position is %d",dice,P3);
             break;
         case (4):
             dice= dice_output();
@@ -162,15 +185,22 @@ int main()
                             P4= Ladder[i].end;
                         }
                 }
+            if (P4==100)
+                {
+                    printf("Dice=%d\n Player 4 Position is %d\n",dice,P1);
+                    printf("BRAVO! PLAYER 4 WON...\n");
+                    return(0);
+                }
             }
-            else
+            if(P4>100)
             {
-                P4=100;
-                printf("BRAVO! PLAYER 4 WON...\n");
-                printf("Dice=%d\n Player 1 Position is %d",dice,P4);
-                return(0);
+                printf("OOPS! POSITION CAN NOT BE OBTAINED, PLEASE ROLL THE DICE AGAIN");
+                P4=P4-dice;
+                printf("Player 4 Position is%d",P4);
+                break;
             }
-             printf("Dice=%d\n Player 1 Position is %d",dice,P4);
+
+             printf("Dice=%d\n Player 4 Position is %d",dice,P4);
             break;
         case (5):
         printf("YOU PRESSED '5', GAME IS SHUTTING DOWN.\n");
