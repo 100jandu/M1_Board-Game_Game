@@ -67,7 +67,7 @@ int main()
             else
             {
                 P1=100;
-                printf("BRAVO! YOU WIN...\n");
+                printf("BRAVO! PLAYER 1 WON...\n");
                 printf("Dice=%d\n Player 1 Position is %d",dice,P1);
                 return(0);
             }
@@ -100,7 +100,7 @@ int main()
             else
             {
                 P2=100;
-                printf("BRAVO! YOU WIN...\n");
+                printf("BRAVO! PLAYER 2 WON...\n");
                 printf("Dice=%d\n Player 2 Position is %d",dice,P2);
                 return(0);
             }
@@ -133,7 +133,7 @@ int main()
             else
             {
                 P3=100;
-                printf("BRAVO! YOU WIN...\n");
+                printf("BRAVO! PLAYER 3 WON...\n");
                 printf("Dice=%d\n Player 1 Position is %d",dice,P3);
                 return(0);
             }
@@ -166,7 +166,7 @@ int main()
             else
             {
                 P4=100;
-                printf("BRAVO! YOU WIN...\n");
+                printf("BRAVO! PLAYER 4 WON...\n");
                 printf("Dice=%d\n Player 1 Position is %d",dice,P4);
                 return(0);
             }
