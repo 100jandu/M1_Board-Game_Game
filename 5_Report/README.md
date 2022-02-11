@@ -84,5 +84,11 @@ The sample of snake and ladder board game used is mentioned below. The pictoral 
 
 ![Sample Snake And Ladder](https://user-images.githubusercontent.com/98866279/153552088-1cd9f7d2-14f3-4e11-9744-4f13c29dafdf.jpg)
   
-  
+  ## Test plan and test ouput
+
+
+| Test ID | Description | Expected Input | Expected Output | Type of Test | Status |
+|---|---|---|---|---|---|
+| LTP01 | Test to check if dice output is always greater than 0 | random function | integer value greater than 0 | Technical | Pass|
+|LTP02 | Test to check if dice output is always less than or equal to 6 | random function | integer values less than or equal to 6 | Technical  | Pass |
   
