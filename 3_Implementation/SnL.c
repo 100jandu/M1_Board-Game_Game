@@ -117,7 +117,7 @@ int main()
             }
             if(P2>100)
             {
-                printf("OOPS! POSITION CAN NOT BE OBTAINED, PLEASE ROLL THE DICE AGAIN");
+                printf("OOPS! POSITION CAN NOT BE OBTAINED, PLEASE ROLL THE DICE AGAIN\n");
                 P2=P2-dice;
                 printf("Player 2 Position is %d",P2);
                 break;
@@ -158,7 +158,7 @@ int main()
             }
             if(P3>100)
             {
-                printf("OOPS! POSITION CAN NOT BE OBTAINED, PLEASE ROLL THE DICE AGAIN");
+                printf("OOPS! POSITION CAN NOT BE OBTAINED, PLEASE ROLL THE DICE AGAIN\n");
                 P3=P3-dice;
                 printf("Player 3 Position is %d",P3);
                 break;
@@ -199,7 +199,7 @@ int main()
             }
             if(P4>100)
             {
-                printf("OOPS! POSITION CAN NOT BE OBTAINED, PLEASE ROLL THE DICE AGAIN");
+                printf("OOPS! POSITION CAN NOT BE OBTAINED, PLEASE ROLL THE DICE AGAIN\n");
                 P4=P4-dice;
                 printf("Player 4 Position is %d",P4);
                 break;
