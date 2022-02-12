@@ -14,7 +14,7 @@
 #include <stdlib.h>
 #include "D:\LTTs Documents\Submitty assignments\M1_Board-Game_Game\3_Implementation\inc\dice1.h"
 #include "D:\LTTs Documents\Submitty assignments\M1_Board-Game_Game\3_Implementation\src\dice.c"
-#include "D:\LTTs Documents\Submitty assignments\M1_Board-Game_Game\3_Implementation\src\diceout6.c"
+
 
 
 struct SnLad
@@ -44,8 +44,10 @@ int main()
             dice= dice_output();
             if (dice==6)
             {
-                diceout6();
-                dice = dice_output();
+                printf("Roll=6: You have earned a chance to play one more time.\n");
+                dice= dice_output();
+                printf("Dice=%d\n",dice);
+
             }
             P1=P1+dice;
             if(P1<101)
@@ -85,8 +87,9 @@ int main()
             dice = dice_output();
             if (dice==6)
             {
-                diceout6();
-                dice = dice_output();
+                printf("Roll=6: You have earned a chance to play one more time.\n");
+                dice= dice_output();
+                printf("Dice=%d\n",dice);
             }
             P2=P2+dice;
             if(P2<101)
@@ -126,8 +129,9 @@ int main()
             dice= dice_output();
             if (dice==6)
             {
-                diceout6();
-                dice = dice_output();
+                printf("Roll=6: You have earned a chance to play one more time.\n");
+                dice= dice_output();
+                printf("Dice=%d\n",dice);
             }
             P3=P3+dice;
             if(P1<101)
@@ -166,8 +170,9 @@ int main()
             dice= dice_output();
             if (dice==6)
             {
-                diceout6();
-                dice = dice_output();
+                printf("Roll=6: You have earned a chance to play one more time.\n");
+                dice= dice_output();
+                printf("Dice=%d\n",dice);
             }
             P4=P4+dice;
             if(P4<101)

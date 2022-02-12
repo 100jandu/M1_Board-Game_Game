@@ -1,7 +1,6 @@
 #include "D:\LTTs Documents\Submitty assignments\M1_Board-Game_Game\3_Implementation\unity\unity.h"
 #include "D:\LTTs Documents\Submitty assignments\M1_Board-Game_Game\3_Implementation\inc\dice1.h"
 #include "D:\LTTs Documents\Submitty assignments\M1_Board-Game_Game\3_Implementation\src\dice.c"
-#include "D:\LTTs Documents\Submitty assignments\M1_Board-Game_Game\3_Implementation\src\diceout6.c"
 #include "D:\LTTs Documents\Submitty assignments\M1_Board-Game_Game\3_Implementation\unity\unity.c"
 
 
