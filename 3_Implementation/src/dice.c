@@ -1,6 +1,5 @@
-#include"D:\LTTs Documents\Submitty assignments\M1_Board-Game_Game\3_Implementation\inc\dice1.h"
-#include<time.h>
-#include<stdlib.h>
+#include"dice1.h"
+
 int dice_output()
 {
     int upper = 6, lower = 1, dice;

@@ -9,11 +9,9 @@
  * @copyright Copyright (c) 2022
  * 
  */
-#include <stdio.h>
-#include <time.h>
-#include <stdlib.h>
-#include "D:\LTTs Documents\Submitty assignments\M1_Board-Game_Game\3_Implementation\inc\dice1.h"
-#include "D:\LTTs Documents\Submitty assignments\M1_Board-Game_Game\3_Implementation\src\dice.c"
+
+#include "dice1.h"
+
 
 
 
@@ -42,9 +40,13 @@ int main()
         {
         case (1):
             dice= dice_output();
+            /**
+             * @brief This segment deals with the dice outcome for 6
+             * 
+             */
             if (dice==6)
             {
-                printf("Roll=6: You have earned a chance to play one more time.\n");
+                printf("Roll=6: You have earned a chance to play one more time.\n");   
                 dice= dice_output();
                 printf("Dice=%d\n",dice);
 
@@ -53,7 +55,10 @@ int main()
             if(P1<101)
             {
                 for(i=0;i<10;i++)
-                {
+                {   /**
+                 * @brief This segment deals with whether the player position actually matches the position of snakes and ladder 
+                 * 
+                 */
                     if(P1==Snake[i].start)
                     {
                         printf("OOPS! YOU CAUGHT A SNAKE.\n");
@@ -65,6 +70,10 @@ int main()
                             P1= Ladder[i].end;
                         }
                 }
+                /**
+                 * @brief This segment declares player as winner
+                 * 
+                 */
                 if (P1==100)
                 {
                     printf("Dice=%d\n Player 1 Position is %d\n",dice,P1);
@@ -73,6 +82,11 @@ int main()
                 }
                 
             }
+            /**
+             * @brief This segment takes care about that if player is about to win and dice rolls out and it adds the player position 
+             * which is greater than 100 it pop up a message and does not allow to move ahead and keeps waitind for another chance to play.
+             * 
+             */
             if(P1>100)
             {
                 printf("OOPS! POSITION CAN NOT BE OBTAINED, PLEASE ROLL THE DICE AGAIN\n");
