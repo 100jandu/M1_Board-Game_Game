@@ -7,6 +7,8 @@ MultiPlayer Snake and Ladder board game.
 
 [![Build Status](https://github.com/100jandu/M1_Board-Game_Game/actions/workflows/Build.yml/badge.svg)](https://github.com/100jandu/M1_Board-Game_Game/actions/workflows/Build.yml)
 
+[![cppcheck](https://github.com/100jandu/M1_Board-Game_Game/actions/workflows/Static_check.yml/badge.svg)](https://github.com/100jandu/M1_Board-Game_Game/actions/workflows/Static_check.yml)
+
 ![Codiga_Dashboard](https://app.codiga.io/public/project/31125/M1_Board-Game_Game/dashboard)
 
 ![Code_Quality_Score](https://api.codiga.io/project/31125/score/svg)
