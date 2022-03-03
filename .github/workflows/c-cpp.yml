@@ -13,6 +13,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: make Build
-      run: make Build -C 3_Implementation
+    - name: make BUILD
+      run: make BUILD -C 3_Implementation
     
