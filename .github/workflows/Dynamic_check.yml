@@ -14,7 +14,8 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: apt install dependency
-      run: sudo apt-get -y install valgrind
+      run: 
+        sudo apt-get -y install valgrind
         sudo apt-get -y install libcunit1-doc libunit1-dev
     - name: Dynamic Analysis
       run: make dynamiccheck -C 3_Implementation
